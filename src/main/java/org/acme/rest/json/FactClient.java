@@ -9,6 +9,7 @@ import javax.ws.rs.Path;
 
 @Path("/api")
 @RegisterRestClient(configKey="fact-api")
+@RegisterProvider(CloudEventsProvider.class)
 public interface FactClient {
 
     @POST
